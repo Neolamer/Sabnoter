@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_login"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/Authorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="Authorization"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/loginInputMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Authorization"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:hint="Login"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/passwordInputMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginInputMenu"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Log in"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/passwordInputMenu"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/doItBtn"
+        android:text="Not registered yet?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/doItBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Do it now!"
+        android:textSize="20sp"
+
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

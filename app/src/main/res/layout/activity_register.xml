@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_register"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:text="Registration"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/loginInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="60dp"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:hint="Login"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginInput"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailInput"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="40dp"
+        />
+
+
+</RelativeLayout>
